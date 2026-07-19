@@ -1,16 +1,16 @@
 def analyze_result(name, roll, marks):
     
     total = sum(marks)
-    average = total / len(marks)
+    ave = total / len(marks)
 
    
-    if average >= 90:
+    if ave >= 90:
         grade = "A"
-    elif average >= 75:
+    elif ave >= 75:
         grade = "B"
-    elif average >= 60:
+    elif ave >= 60:
         grade = "C"
-    elif average >= 40:
+    elif ave >= 40:
         grade = "D"
     else:
         grade = "Fail"
@@ -18,7 +18,7 @@ def analyze_result(name, roll, marks):
 
     print(f"Student: {name} (Roll: {roll})")
     print(f"Total: {total}")
-    print(f"Average: {average:.2f}")
+    print(f"Average: {ave:.2f}")
     print(f"Grade: {grade}")
 
     
